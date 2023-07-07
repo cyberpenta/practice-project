@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            background-color: rgb(104, 183, 183);
+
+        }
+        label {
+            display: block;
+            padding: 5px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        input[type='submit']{
+            background: red;
+            color: wheat;
+            margin-top: 5px;
+            width: 100px;
+            height: 30px;
+            border: none;
+        }
+        input[type='reset']{
+            background: blue;
+            color: wheat;
+            margin-top: 5px;
+            width: 100px;
+            height: 30px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h3>Please Fill The Form</h3>
+        <form action="">
+            <label for="Name">Name :
+                <input type="text" name="" id="Name"
+                placeholder="Enter your Name">
+            </label>
+            <label for="Email">Email :
+                <input type="email" name="" id="Email" placeholder="Enter Your Email">
+            </label>
+            <label for="Phone">Phone :
+                <input type="number" name="" id="Phone" placeholder="Enter Your Number">
+            </label>
+
+
+            <fieldset>
+                <legend>Select One Pitha</legend>
+                <label for="pitha">
+                    <input type="radio" id="pitha" name="pitha">Vapa
+                </label>
+
+                <label for="pitha">
+                    <input type="radio" id="pitha" name="pitha">Chitai
+                </label>
+
+                <label for="pitha">
+                    <input type="radio" name="pitha" id="pitha">Chapti
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Pick Any Vorta</legend>
+                <label for="vorta">
+                    <input type="checkbox" name="" id="vorta">Shutki
+                </label>
+                
+                <label for="vorta">
+                    <input type="checkbox" name="" id="vorta">Dhonia
+                </label>
+                
+                <label for="vorta">
+                    <input type="checkbox" name="" id="vorta">Chili
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Any Special Requirements</legend>
+                <label for="Special"></label>
+                <textarea name="" id="Special" cols="30" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" name="" id="">
+        </form>
+    </main>
+</body>
+
+</html>
